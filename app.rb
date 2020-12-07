@@ -18,5 +18,6 @@ get '/ollie' do
 end
 
 get '/duck' do
+  @name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
