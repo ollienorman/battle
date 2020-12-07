@@ -18,7 +18,5 @@ get '/ollie' do
 end
 
 get '/duck' do
-  '<div style="border: 3px dashed red">
-  <img src="https://1.bp.blogspot.com/--3aHSQ3cWPg/WVqPpCbXYGI/AAAAAAAAHmo/UmGhgaY9_hMHFgXmo99ri7e4S2KVr8VDwCLcBGAs/s1600/170703loomingduck.jpg">
-  </div>'
+  erb(:index)
 end
