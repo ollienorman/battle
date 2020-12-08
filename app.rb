@@ -22,8 +22,12 @@ get '/duck' do
   erb(:index)
 end
 
-get '/named-duck' do
+post '/named-duck' do
   p params
   @name = params[:name]
   erb(:index)
+end
+
+get '/duck-form' do
+  erb(:duckform)
 end
