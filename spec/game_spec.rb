@@ -14,5 +14,9 @@ describe Game do
     it "causes the player to reduce_hp" do
       expect(subject.attack(player_1)).to eq true
     end
+
+    it "changes the turn variable" do
+      expect{ subject.attack(player_2) }.to change{ subject.player_1_turn }.to false
+    end
   end
 end
